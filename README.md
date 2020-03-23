@@ -24,3 +24,14 @@ Step 2. Add the dependency
 	dependencies {
 	        implementation 'com.github.birdeveloper:ImageBlur:1.0'
 	}
+	
+Step 3. Add the activity or fragment
+
+
+	ImageBlur.withContext(context)
+                .blur(25f)
+                .asyncTask(true)
+                .load(R.drawable.profile)
+                .into(imageView)
+		
+everything is ok! I hope you will be satisfied using it. Call the police if you encounter any problems: D
